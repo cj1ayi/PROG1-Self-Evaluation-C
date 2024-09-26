@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "f:/Everything in Drive F/Documents/Coding Documents/PROG1 Self Evaluation Exercises C/2.0 Self Evaluation/[Lab] More Exercises",
-      "program": "f:/Everything in Drive F/Documents/Coding Documents/PROG1 Self Evaluation Exercises C/2.0 Self Evaluation/[Lab] More Exercises/build/Debug/outDebug",
+      "cwd": "c:/Users/Nate/Documents/GitHub/PROG1-Self-Evaluation-C/2.0 Self Evaluation",
+      "program": "c:/Users/Nate/Documents/GitHub/PROG1-Self-Evaluation-C/2.0 Self Evaluation/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
