@@ -26,11 +26,11 @@ int isLeapYear(int year)
   if (year%400 == 0) /* Exactly divisible by 400 e.g. 2000 */
     flag = 1;
   else if (year%100 == 0) /* Exactly divisible by 100 and not by 400 e.g. 1900 */
-    flag = 1;
+    flag = 0;
   else if (year%4 == 0) /* Exactly divisible by 4 and neither by 100 nor 400 e.g. 2016, 2020 */
     flag = 1;
   else /* Not divisible by 4 or 100 or 400 e.g. 2017, 2018, 2019 */
-    flag = 1;
+    flag = 0;
 	
   return flag;
 }
@@ -49,8 +49,7 @@ int getNumDays(int month, int yy)
       || month == 8 || month == 10  || month == 12)
 			days=31;
     else if	(month == 2)	
-
-            if (!isLeapYear(yy))
+            if (isLeapYear(yy))
               days=29;
 			else
           days=28;
