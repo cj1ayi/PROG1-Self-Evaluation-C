@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "f:/Everything in Drive F/Documents/Coding Documents/PROG1 Self Evaluation Exercises C/6.0 Iterative Statements",
-      "program": "f:/Everything in Drive F/Documents/Coding Documents/PROG1 Self Evaluation Exercises C/6.0 Iterative Statements/build/Debug/outDebug",
+      "cwd": "c:/Users/Nate/Documents/GitHub/PROG1-Self-Evaluation-C/6.0 Iterative Statements",
+      "program": "c:/Users/Nate/Documents/GitHub/PROG1-Self-Evaluation-C/6.0 Iterative Statements/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
