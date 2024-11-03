@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "f:/Everything in Drive F/Documents/Coding Documents/PROG1 Self Evaluation Exercises C/6.0 Iterative Statements",
-      "program": "f:/Everything in Drive F/Documents/Coding Documents/PROG1 Self Evaluation Exercises C/6.0 Iterative Statements/build/Debug/outDebug",
+      "cwd": "f:/Everything in Drive F/Documents/Coding Documents/PROG1 Self Evaluation Exercises C/5.0 Self Evaluation",
+      "program": "f:/Everything in Drive F/Documents/Coding Documents/PROG1 Self Evaluation Exercises C/5.0 Self Evaluation/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
