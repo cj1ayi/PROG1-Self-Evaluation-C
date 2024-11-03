@@ -8,8 +8,13 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
+<<<<<<< HEAD
       "cwd": "f:/Everything in Drive F/Documents/Coding Documents/PROG1 Self Evaluation Exercises C/5.0 Self Evaluation",
       "program": "f:/Everything in Drive F/Documents/Coding Documents/PROG1 Self Evaluation Exercises C/5.0 Self Evaluation/build/Debug/outDebug",
+=======
+      "cwd": "c:/Users/Nate/Documents/GitHub/PROG1-Self-Evaluation-C/6.0 Iterative Statements",
+      "program": "c:/Users/Nate/Documents/GitHub/PROG1-Self-Evaluation-C/6.0 Iterative Statements/build/Debug/outDebug",
+>>>>>>> 0416122e638017e8eacaba7284a0488948a45699
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
