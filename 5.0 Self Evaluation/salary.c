@@ -9,38 +9,40 @@ Write a program that asks for the salary of an employee and compute for the inco
 11% : for the remaining value
 */
 
-float incomeTax(float salary)
-{
-    float tax = 0.0;
-    if (salary <= 1000) 
-        tax = salary * 0.02;
-    else {
-        tax += 1000 * 0.02; 
-        salary -= 1000;     
-        
-        if (salary <= 2000) {
-            tax += salary * 0.07;
-        } else {
-            tax += 2000 * 0.07; 
-            salary -= 2000;      
-            tax += salary * 0.11;  
-        }
-    }
-    return tax;
-}
+#include <stdio.h>
 
+float incomeTax(float fSalary)
+{
+    // Initialize fTax as zero to prevent any garbage values
+    float fTax = 0.0;
+    
+    // If the salary is less than or equal to 1000, apply 2% tax on the entire salary
+    if (fSalary <= 1000) 
+        fTax = fSalary * 0.02;  // Calculate 2% of the salary
+    else 
+    {
+        // If salary is greater than 1000, calculate 2% tax on the first 1000 pesos
+        fTax += 1000 * 0.02;    // Apply 2% tax on the first 1000
+        // Deduct 1000 from salary since it's already taxed
+        fSalary -= 1000;
+        // If the remaining salary is less than or equal to 2000, apply 7% tax
+        if (fSalary <= 2000) 
+            fTax += fSalary * 0.07;  // Apply 7% tax on the next portion up to 2000 pesos
+        else 
+            // Apply 7% tax on the next 2000 pesos if salary exceeds 3000
+            fTax += 2000 * 0.07;    // Apply 7% tax on the next 2000 pesos
+    }
+    return fTax; // return total tax
+}
 
 int main()
 {
-    float salary; 
+    float fSalary; 
 
     printf("Enter Salary: ");
-    scanf("%f", &salary);
-
-    float incTax = incomeTax(salary);
-    
-    
-    printf("The income tax to be paid is: %.2f pesos\n", incTax);
+    scanf("%f", &fSalary);
+    float fIncTax = incomeTax(fSalary);
+    printf("The income tax to be paid is: %.2f pesos\n", fIncTax);
 
     return 0;
 }

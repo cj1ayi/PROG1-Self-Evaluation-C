@@ -1,25 +1,30 @@
 #include <stdio.h>
 
+
 int main()
 {
-    float hours, basicSalary, rate, bonus, totalSalary;
+    // Ask the user for inputs: hours worked and hourly rate
+    float fHours, fBasicSalary,fRate, fBonus, fTotalSalary;
     printf("Hours worked: ");
-    scanf("%f", &hours);
+    scanf("%f", &fHours);
     printf("Hourly rate: ");
-    scanf("%f", &rate);
+    scanf("%f", &fRate);
 
-    if (hours > 45)
-        bonus = 100;
-    else if (hours > 40 && hours <= 45)
-        bonus = 50;
-    else if (hours > 35 && hours <= 40)
-        bonus = 25;
+    // Set bonus based on hours worked
+    if (fHours > 45)
+        fBonus = 100;
+    else if (fHours > 40 && fHours <= 45)
+        fBonus = 50;
+    else if (fHours > 35 && fHours <= 40)
+        fBonus = 25;
     else
-        bonus = 0;
+        fBonus = 0;
 
-    basicSalary = hours * rate;
-
-    totalSalary = basicSalary + bonus;
-    printf("Total salary: %.2f\n", totalSalary);
+    // Calculate the basic salary 
+    fBasicSalary = fHours * fRate;
+    
+    // Calculate and display total salary 
+    fTotalSalary = fBasicSalary + fBonus;
+    printf("Total salary: %.2f\n", fTotalSalary);
 
 }
